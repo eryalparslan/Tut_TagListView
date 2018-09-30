@@ -13,6 +13,7 @@
 		162DF5632160BB0500E1C6BB /* Tut_TagListView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 162DF5612160BB0500E1C6BB /* Tut_TagListView.xcdatamodeld */; };
 		162DF5652160BB0600E1C6BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 162DF5642160BB0600E1C6BB /* Assets.xcassets */; };
 		162DF5682160BB0600E1C6BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162DF5662160BB0600E1C6BB /* LaunchScreen.storyboard */; };
+		6906D21268E275C49A354201 /* Pods_Tut_TagListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70714D438132CDA2F8934FB /* Pods_Tut_TagListView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		162DF5642160BB0600E1C6BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		162DF5672160BB0600E1C6BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		162DF5692160BB0600E1C6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73426D891DA2C1A6AFA31B70 /* Pods-Tut_TagListView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tut_TagListView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tut_TagListView/Pods-Tut_TagListView.debug.xcconfig"; sourceTree = "<group>"; };
+		E70714D438132CDA2F8934FB /* Pods_Tut_TagListView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tut_TagListView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE59B9E9C37627E0DD289AFC /* Pods-Tut_TagListView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tut_TagListView.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tut_TagListView/Pods-Tut_TagListView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6906D21268E275C49A354201 /* Pods_Tut_TagListView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FB5F0B8F7CF9995F4D94D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E70714D438132CDA2F8934FB /* Pods_Tut_TagListView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		162DF54E2160BB0500E1C6BB = {
 			isa = PBXGroup;
 			children = (
 				162DF5592160BB0500E1C6BB /* Tut_TagListView */,
 				162DF5582160BB0500E1C6BB /* Products */,
+				CD34504FCADEE9C6DE7A2F64 /* Pods */,
+				09FB5F0B8F7CF9995F4D94D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = Tut_TagListView;
 			sourceTree = "<group>";
 		};
+		CD34504FCADEE9C6DE7A2F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73426D891DA2C1A6AFA31B70 /* Pods-Tut_TagListView.debug.xcconfig */,
+				FE59B9E9C37627E0DD289AFC /* Pods-Tut_TagListView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 162DF56C2160BB0600E1C6BB /* Build configuration list for PBXNativeTarget "Tut_TagListView" */;
 			buildPhases = (
+				63700544242BD1846F0B9BE6 /* [CP] Check Pods Manifest.lock */,
 				162DF5532160BB0500E1C6BB /* Sources */,
 				162DF5542160BB0500E1C6BB /* Frameworks */,
 				162DF5552160BB0500E1C6BB /* Resources */,
+				53678E74279AFD894A604715 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53678E74279AFD894A604715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tut_TagListView/Pods-Tut_TagListView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TagListView/TagListView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TagListView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tut_TagListView/Pods-Tut_TagListView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63700544242BD1846F0B9BE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tut_TagListView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		162DF5532160BB0500E1C6BB /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		162DF56D2160BB0600E1C6BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73426D891DA2C1A6AFA31B70 /* Pods-Tut_TagListView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		162DF56E2160BB0600E1C6BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE59B9E9C37627E0DD289AFC /* Pods-Tut_TagListView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
